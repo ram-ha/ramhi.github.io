@@ -1,0 +1,583 @@
+@charset "utf-8";
+.html{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+#paik_wrap{
+    min-width: 280px;
+}
+.deskTop_nav{
+    display: none;
+}
+
+.fixed{
+    position: fixed;
+    z-index: 10;
+    bottom: 15px;
+    right: 15px;
+    background-color: rgba(22, 100, 255, 0.747);
+    border: 1px solid #0f347e;
+    display: none;
+}
+nav{
+    position: fixed;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    right: 15px;
+}
+nav ul li a{
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(114, 114, 114, 0.309);
+    text-indent: -9999px;
+    margin: 10px 0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+nav ul li.active a{
+    border: #ffe800 1px solid;
+    box-shadow: 0 0 5px rgba(211, 211, 211, 0.5);
+    background-color: rgba(15, 52, 126, 0.63);
+}
+
+header{
+    position: fixed;
+    height: 53px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    background-color: white;
+}
+
+.header_wrap{
+    position: relative;
+    height: 100%;
+    padding: 0 10px;
+}
+.header_wrap h2{
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+}
+.header_wrap h2 a{
+    width: 116px;
+    height: 37px;
+    display: block;
+    background-image: url(../img/header_logo.png);
+    background-size: 100%;
+    background-position: center;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+}
+.mob_menu{
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    width: 40px;
+    height: 40px;
+}
+.mob_menu a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.mob_menu a span{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #0f347e;
+    border-radius: 30px;
+    transition:all 0.3s;
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    -ms-transition:all 0.3s;
+    -o-transition:all 0.3s;
+}
+.mob_menu a span:nth-child(1){
+    top: 0;
+}
+.mob_menu a span:nth-child(2){
+    top: 12px;
+}
+.mob_menu a span:nth-child(3){
+    top: 24px;
+}
+
+header.Move .mob_Nav{
+    right:0;
+}
+
+
+header.Move .mob_menu span:nth-child(1){
+    transform:rotate(-45deg);
+    top:10px;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+}
+header.Move .mob_menu span:nth-child(2){
+  transform:translateX(-50px);
+  opacity:0;
+}
+header.Move .mob_menu span:nth-child(3){
+    transform:rotate(45deg);
+    top:10px;
+}
+
+
+.mob_Nav{
+    position: fixed;
+    top:53px;
+    right:-100%;
+    width:100%;
+    /* background-color:rgba(255, 255, 255, 0.85); */
+    background-color: #ffe800;
+    /* opacity:0; */
+    height:100%;
+    transition:all 0.5s ;
+    -webkit-transition:all 0.5s ;
+    -moz-transition:all 0.5s ;
+    -ms-transition:all 0.5s ;
+    -o-transition:all 0.5s ;
+    overflow-y: auto;
+}
+.mob_Nav .m_sub_list div{
+    border-bottom: 2px solid rgba(75, 75, 75, 0.603);
+}
+
+.mob_Nav .m_sub_list div>a.first_sub{
+    display: block;
+    width: 30vw;
+    height: 40px;
+    background-color: #0f347e;
+    text-align: center;
+    color: #fff;
+    font-weight: 450;
+    line-height: 38px;
+    margin: 15px 20px;
+    padding-right: 10px;
+    letter-spacing: 5px;
+    font-size: 20px;
+    border-radius: 50px;
+}
+.mob_Nav .m_sub_list div>a{
+    line-height: 40px;
+    font-size: 18px;
+    display: inline-block;
+    width: 32.3%;
+    color: rgb(63, 63, 63);
+    font-weight: 400;
+    text-indent: 15px;
+    text-align: center;
+    /* 말줄임 세트 3속성 */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.m_sub_list{
+    /* display: none; */
+    padding: 10px 0;
+}
+.mob_Nav .mob_img01{
+    display: inline-block;
+    width: 30px;
+    margin: 5px 0 0 30px; 
+}
+.mob_Nav .mob_img02{
+    display: inline-block;
+    width: 55px;
+    margin: 5px 0 0 30px; 
+}
+.mob_btn{
+    position: absolute;
+    display: block;
+    padding: 0 20px;
+    margin: 12px 0 0 52vw; 
+    background: #0f347e;
+    color: white;
+    font-size: 20px;
+    border-radius: 22px;
+    line-height: 44px;
+    top: 530px;
+    right: 20px;
+}
+
+/* 공통내용 */
+section{
+    position: relative;
+    font-family: 'KoreanYNSJG3-R';
+}
+.rel_box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.sec_tit{
+    font-size: 40px;
+    text-align: center;
+    /* font-family: 'RecipekoreaM'; */
+    /* font-family: 'DoHyeon-Regular'; */
+    font-family: 'KoreanYNSJG3-R';
+    line-height: 1.3;
+    color:#333;
+}
+.sec_tit span{
+    /* font-family: 'KoreanYNSJG3-R'; */
+    font-family: 'DoHyeon-Regular';
+    font-size: 50px;
+}
+.sec_txt{
+    display: none;
+    text-align: center;
+}
+
+.cont_btn{
+    background-color: #f6f6f6;
+    display: flex;  
+    margin: 10px 22vw; 
+    font-size: 14px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    color: #333;
+
+}
+.cont_btn .ico_arr{
+    display: inline-block;
+    width: 6px;
+    height: 9px;
+    margin-left: 10px;
+}
+
+/* 1 */
+#sec01{
+    height: 574px;
+    margin-top: 52px;
+    text-align: center;
+    overflow: hidden;
+}
+#sec01::after{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 574px;
+    z-index: -1;
+    background-color: #0f347e;
+}
+
+.sec01_img01{
+    width: 190px;
+    opacity: 0;
+    position: absolute;
+    left: calc(50% - 95px);
+    top: 305px;
+    z-index: 0;
+}
+.sec01_img02{
+    position: absolute;
+    left: calc(50% - 165px);
+    bottom: -2.5px;
+    opacity: 0;
+}
+.sec01_img03{
+    position: absolute;
+    right: calc(50% - 159px);
+    bottom: -2.5px;
+    opacity: 0;
+}
+.sec01_img04{
+    display: none;
+}
+.sec01_txt{
+    padding-top: 60px;
+}
+.sec01_txt .sec_tit{
+    color: #ffe800;
+    text-align: left;
+    width: 175px;
+    margin: auto;
+    font-family: 'RecipekoreaM';
+}
+.sec01_txt .btn_wrap{
+    margin-top: 20px;
+}
+.sec01_txt .btn_wrap .sec_btn{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px auto 0;
+    width: 115px;
+    height: 31px;
+    border-radius: 5px;
+    position: relative;
+    padding: 5px 5px;
+    background-color: white;
+    font-size: 10px;
+}
+.btn_ico{
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/img_kabang_200417.png) no-repeat;
+    margin: 0 10px ;
+}
+.sec01_txt .btn_wrap .sec_btn:nth-child(1){
+    margin-bottom: 10px;
+}
+.sec01_txt .btn_wrap .sec_btn:nth-child(1) .btn_ico{
+    background-position: -341px -292px;
+} 
+.sec01_txt .btn_wrap .sec_btn:nth-child(2) .btn_ico{
+    background-position: -371px -292px;
+} 
+
+/* 2 */
+#sec02{
+    height: 740px;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 100px;
+    background: url(../img/sec02_stamp_img.png) 
+    no-repeat ;
+    background-position-x: calc(50% - 5px);
+    background-position-y: calc(50% + 120px);
+    background-size: 700px auto;
+}
+#sec02 .btn_wrap{
+    /* text-align: center; */
+    transform: translateY(30px);
+}
+#sec02 .sec_tit{
+    font-size: 35px;
+}
+/* 3 */
+#sec03{
+    height: 760px;
+    text-align: center;
+    background: url(../img/sec03_bg_gradient.png) repeat-x;
+    position: relative;
+}
+.sec03_txt .sec_tit{
+    padding-top: 76px;
+    text-align: center;
+}
+#sec03 .btn_wrap{
+    /* text-align: center; */
+    transform: translateY(1px);
+}
+
+.sec03_img01{
+    position: absolute;
+    top: 400px;
+    left: calc(50% - 135px);
+    opacity: 0;
+    width: 300px;
+}
+.sec03_wifi_wrap{
+    position: absolute;
+    top: 340px;
+    left: calc(50% + 5px);
+
+}
+/* @keyframes wifi{
+    0%{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(247, 247, 247, 0.5) ;
+    }
+    100%{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+} */
+.sec03_wifi_wrap>li{
+    position:absolute;
+    display:none;
+}
+
+/* 4 */
+#sec04{
+    height: 690px;
+    overflow: hidden;
+}
+#sec04::after{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    z-index: -1;
+    background-color: #ffe800;
+}
+.sec04_txt{
+    padding-top: 100px;
+}
+.sec04_txt .sec_tit{
+    color: #0f347e;
+}
+#sec04 .btn_wrap{
+    /* text-align: center; */
+    transform: translateY(20px);
+}
+.sec04_img{
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 0;
+    opacity: 0;
+    width: 400px;
+}
+/* 5 */
+#sec05{
+    height: 700px;
+}
+.sec05_txt{
+    padding-top: 350px;
+}
+.sec05_img{
+    position: absolute;
+    top: 50px;
+    left: calc(50% - 120px);
+    opacity: 0;
+}
+
+/* 6 */
+#sec06{
+    height: 700px;
+    text-align: center;
+}
+#sec06::after{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    z-index: -1;
+    background-color: #f6f6f6;
+}
+.sec06_txt{
+    padding-top: 100px;
+}
+#sec06 .cont_btn{
+    background-color: white;
+}
+#sec06 .btn_wrap{
+    /* text-align: center; */
+    transform: translateY(15px);
+}
+.sec06_img{
+    width: 300px;
+   margin-top: 40px;
+   opacity: 0;
+}
+/* 7 */
+#sec07{
+    height: 880px;
+}
+#sec07::after{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 880px;
+    z-index: -1;
+    background-color: #2150ae;
+}
+.sec07_txt{
+    padding-top: 90px;
+}
+#sec07 .btn_wrap{
+    /* text-align: center; */
+    transform: translateY(15px);
+}
+.sec07_txt .sec_tit{
+    color: white;
+}
+#sec07 .cont_btn{
+    background-color: rgb(250, 250, 250);
+    color: rgb(77, 77, 77);
+}
+.sec07_img{
+    width: 630px;
+    height: auto;
+    position: absolute;
+    bottom: -15px;
+    left: calc(50% - 335px);
+    opacity: 0;
+}
+/* 8 */
+#sec08{
+    height: 640px;
+    text-align: center;
+    overflow: hidden;
+    background-color: #fafafa;
+}
+.sec08_txt{
+    padding-top: 100px;
+}
+.sec08_txt .sec_tit{
+    font-family: 'RecipekoreaM';
+}
+.sec08_tag{
+    margin-top: 20px;
+}
+.sec08_tag li{
+    margin-bottom: 15px;
+}
+#sec08::after{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 415px;
+    left: calc(50% - 65px);
+    width: 130px;
+    height: 3px;
+    background-color: #0f347e;
+}
+.sec08_img{
+    position: absolute;
+    bottom: -105px;
+    left: calc(50% - 170px);
+    opacity: 0;
+    width: 350px;
+}
+footer{
+    padding: 20px 0;
+    text-align: center;
+}
+footer .rel_box .copy{
+    font-size: 9px;
+}
+footer .rel_box .footer_info{
+    display: none;
+}
+.footer_img{
+    width: 120px;
+    height: auto;
+    margin-top: 10px;
+}

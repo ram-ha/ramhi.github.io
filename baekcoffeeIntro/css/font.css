@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Recipekorea';
+  src: url('font/Recipekorea.eot');
+  src: url('font/Recipekorea.eot?#iefix') format('embedded-opentype'),
+       /* url('font/Recipekorea.woff2') format('woff2'); */
+  /* font-weight: normal;
+  font-style: normal; */
+}
+
+@font-face {
+  font-family: 'RecipekoreaM';
+  src: url('font/RecipekoreaM.svg#RecipekoreaM') format('svg'),
+       url('font/RecipekoreaM.ttf') format('truetype'),
+       url('font/RecipekoreaM.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DoHyeon-Regular';
+  src: url('font/DoHyeon-Regular.svg#DoHyeon-Regular') format('svg'),
+       url('font/DoHyeon-Regular.ttf') format('truetype'),
+       url('font/DoHyeon-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'KoreanYNSJG2-R';
+  src: url('font/KoreanYNSJG2-R.svg#KoreanYNSJG2-R') format('svg'),
+       url('font/KoreanYNSJG2-R.ttf') format('truetype'),
+       url('font/KoreanYNSJG2-R.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoreanYNSJG2-R';
+  src: url('font/KoreanYNSJG2-R.eot');
+  src: url('font/KoreanYNSJG2-R.eot?#iefix') format('embedded-opentype'),
+       url('font/KoreanYNSJG2-R.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'KoreanYNSJG3-R';
+  src: url('font/KoreanYNSJG3-R.svg#KoreanYNSJG3-R') format('svg'),
+       url('font/KoreanYNSJG3-R.ttf') format('truetype'),
+       url('font/KoreanYNSJG3-R.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KoreanYNSJG3-R';
+  src: url('font/KoreanYNSJG3-R.eot');
+  src: url('font/KoreanYNSJG3-R.eot?#iefix') format('embedded-opentype'),
+       url('font/KoreanYNSJG3-R.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
